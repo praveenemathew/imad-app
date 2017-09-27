@@ -23,19 +23,20 @@ var articles = {
     
     
 };
- articletwo:{ title:"Article-two | Praveen E Mathew",
+ articletwo:{ 
+    title:"Article-two | Praveen E Mathew",
     heading:"Article two",
     date:"sep 28 2017",
     content:`<p>
             This is the content for the second article
             
         `};
- articlrthree:{
-    itle:"Article-two | Praveen E Mathew",
-    heading:"Article two",
+ articlethree:{
+    title:"Article-three | Praveen E Mathew",
+    heading:"Article three",
     date:"sep 28 2017",
     content:`<p>
-            This is the content for the second article`
+            This is the content for the third article`
             
 };
 };
