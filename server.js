@@ -22,7 +22,7 @@ var articles = {
         </p>`
     
     
-};
+},
  articletwo:{ 
     title:"Article-two | Praveen E Mathew",
     heading:"Article two",
@@ -30,7 +30,7 @@ var articles = {
     content:`<p>
             This is the content for the second article
             
-        `};
+        `},
  articlethree:{
     title:"Article-three | Praveen E Mathew",
     heading:"Article three",
@@ -38,7 +38,7 @@ var articles = {
     content:`<p>
             This is the content for the third article`
             
-};
+}
 };
 function createTemplate(data){
     title=data.title;
@@ -80,8 +80,9 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/article-one',function(req,res){
-     res.send(createTemplate(articleone));
+app.get('/:articlename',function(req,res){
+    //articlename=article-one
+     res.send(createTemplate(articles[articlename]));
 });
 app.get('/article-two',function(req,res){
     res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
