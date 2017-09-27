@@ -23,7 +23,7 @@ var articleone={
     
 };
 function createTemplate(data){
-    titile=data.title;
+    title=data.title;
     heading=data.heading;
     date=data.date;
     content=data.content;
