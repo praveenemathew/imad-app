@@ -31,3 +31,17 @@ button.onclick=function (){
   request.open('GET','http://praveenemathew.imad.hasura-app.io/counter',true);
   request.send("HELLO");
 };
+
+var nameinput=document.getElementById("name");
+var name=nameinput.value;
+var submit=document.getElementById("submit_id");
+submit.onclick=function() {
+  
+  var names=['name1','name2','name3','name4'];
+  var list='';
+  for(var i=0;i<names.length;++i){
+      list='<li>'+names[i]+'</li>';
+  }
+  var ul=document.getElementById("ulist");
+  ul.innerHTML=list;
+};
