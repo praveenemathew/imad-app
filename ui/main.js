@@ -32,11 +32,11 @@ button.onclick=function (){
   request.send("HELLO");
 };
 
-var nameinput=document.getElementById("name");
-var name=nameinput.value;
+
 var submit=document.getElementById("submit_id");
 submit.onclick=function() {
     
+   
     var request=new XMLHttpRequest();
     request.onreadystatechange=function(){
         
@@ -54,6 +54,8 @@ submit.onclick=function() {
         }
      }
     };
+  var nameinput=document.getElementById("name");
+  var name=nameinput.value;
   request.open('GET','http://praveenemathew.imad.hasura-app.io/submit-name?name='+name,true);
   request.send("HELLO");
  
