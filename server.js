@@ -107,9 +107,9 @@ app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
 var names=[]
-app.get('/submit-name/:name',function(req,res){
+app.get('/submit-name',function(req,res){ //submit-name?name=xxx
     //get the name from req object
-    var name=req.params.name;
+    var name=req.query.name;
     names.push(name);
     //JSON javascript object notation
     res.send(JSON.stringify(names));
