@@ -9,7 +9,7 @@ button.onclick=function (){
         if(request.status===200){
             var txt= request.responseText;
             var span=document.getElementById("demo");
-            span.innerHTML=txt;
+            span.innerHTML=txt.toString();
             
         }
      }
