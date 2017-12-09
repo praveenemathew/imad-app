@@ -1,4 +1,4 @@
-
+console.log('566666666666666666666666666666Loaded!');
 var button=document.getElementById("button");
 button.onclick=function (){
     console.log("Hai");
