@@ -84,7 +84,7 @@ app.get('/56.html', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', '56.html'));
 });
 
-app.get('/56.html', function (req, res) {
+app.get('/change', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'abc.txt'));
 });
 
