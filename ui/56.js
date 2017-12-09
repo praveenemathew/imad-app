@@ -8,7 +8,7 @@ button.onclick=function (){
     if(request.readyState === XMLHttpRequest.DONE){
         if(request.status===200){
             var txt= request.responseText;
-            var span=document.getElementById("p");
+            var span=document.getElementById("demo");
             span.innerHTML=txt;
             
         }
