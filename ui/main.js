@@ -15,7 +15,7 @@ console.log('Loaded!');
 
 var button=document.getElementById("button");
 button.onclick=function (){
-    
+    console.log("Hello");
     var request=new XMLHttpRequest();
     request.onreadystatechange=function(){
         
