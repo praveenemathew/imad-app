@@ -1,7 +1,7 @@
 
 var button=document.getElementById("button");
 button.onclick=function (){
-    
+    console.log("Hai");
     var request=new XMLHttpRequest();
     request.onreadystatechange=function(){
         
