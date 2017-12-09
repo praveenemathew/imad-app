@@ -47,7 +47,7 @@ button1.onclick=function(){
      }
     };
     request.open('GET','http://praveenemathew.imad.hasura-app.io/counter',true);
-    
+    request.send();
     
 };
 
