@@ -9,7 +9,7 @@ button.onclick=function (){
         if(request.status===200){
             var xmlDoc= request.responseXML;
             var span=document.getElementById("demo");
-            span.innerHTML=xmlDoc.getElementsByTagName("title")[0].childNodes[1].nodeValue;
+            span.innerHTML=xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
             
         }
      }
