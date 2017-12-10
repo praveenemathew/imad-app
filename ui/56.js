@@ -2,6 +2,8 @@ console.log('566666666666666666666666666666Loaded!');
 var button=document.getElementById("button");
 button.onclick=function (){
     console.log("Hai");
+    var i,x,txt;
+    txt="";
     var request=new XMLHttpRequest();
     request.onreadystatechange=function(){
         
@@ -9,8 +11,11 @@ button.onclick=function (){
         if(request.status===200){
             var xmlDoc= request.responseXML;
             var span=document.getElementById("demo");
-            span.innerHTML=xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
-            
+            x=xmlDoc.getElementsByTagName("title");
+            for(i=0;i<x.length;++i){
+                txt+=x[i].childNodes[0].nodeValue+"<br>";
+            }
+            span.innerHTML=txt;
         }
      }
     };
