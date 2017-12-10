@@ -11,7 +11,7 @@ button.onclick=function (){
         if(request.status===200){
             var xmlDoc= request.responseXML;
             var span=document.getElementById("demo");
-            x=xmlDoc.documentElement.childNodes;
+            x=xmlDoc.documentElement;
             console.log(x);
            
             span.innerHTML=txt;
