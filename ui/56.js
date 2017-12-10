@@ -7,9 +7,9 @@ button.onclick=function (){
         
     if(request.readyState === XMLHttpRequest.DONE){
         if(request.status===200){
-            var txt= request.responseText;
+            var xmlDoc= request.responseXML;
             var span=document.getElementById("demo");
-            span.innerHTML=txt.toString();
+            span.innerHTML=xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
             
         }
      }
