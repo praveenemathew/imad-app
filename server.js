@@ -85,7 +85,7 @@ app.get('/56.html', function (req, res) {
 });
 
 app.get('/change', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'abc.txt'));
+  res.sendFile(path.join(__dirname, 'ui', 'books.xml'));
 });
 
 var counter=0;
