@@ -11,10 +11,9 @@ button.onclick=function (){
         if(request.status===200){
             var xmlDoc= request.responseXML;
             var span=document.getElementById("demo");
-            x=xmlDoc.getElementsByTagName("title");
-            for(i=0;i<x.length;++i){
-                txt+=x[i].childNodes[0].nodeValue+"<br>";
-            }
+            x=xmlDoc.documentElement.childNodes;
+            
+           
             span.innerHTML=txt;
         }
      }
