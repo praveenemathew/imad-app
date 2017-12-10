@@ -11,9 +11,13 @@ button.onclick=function (){
         if(request.status===200){
             var xmlDoc= request.responseXML;
             var span=document.getElementById("demo");
-            x=xmlDoc.documentElement;
+            x=xmlDoc.documentElement.childNodes;
             console.log(x);
-           
+            for (i = 0; i < x.length; i++) { 
+                  if (x[i].nodeType == 1) {
+            txt += x[i].nodeName + "<br>";
+        }
+            }  
             span.innerHTML=txt;
         }
      }
