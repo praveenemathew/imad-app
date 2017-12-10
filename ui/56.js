@@ -14,7 +14,7 @@ button.onclick=function (){
             x=xmlDoc.documentElement.childNodes;
             console.log(x);
             for (i = 0; i < x.length; i++) { 
-                  if (x[i].nodeType == 1) {
+                  if (x[i].nodeType == 2) {
             txt += x[i].nodeName + "<br>";
         }
             }  
