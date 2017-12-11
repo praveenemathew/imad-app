@@ -17,7 +17,7 @@ button.onclick=function (){
             console.log(x,"--->Document Type");
              x=xmlDoc.documentElement;
             console.log(x,"---->Document Element");
-             x=xmlDoc.documentURL;
+             x=xmlDoc.documentURI;
             console.log(x,"------>Document URL");
              x=xmlDoc.domConfig;
             console.log(x,"------>Dom Config");
