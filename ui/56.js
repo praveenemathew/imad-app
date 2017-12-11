@@ -25,6 +25,8 @@ button.onclick=function (){
             console.log(x,"----->Implementation");
              x=xmlDoc.firstChild;
             console.log(x,"---->FirstChild");
+             x=xmlDoc.inputEncoding;
+            console.log(x,"--->Input Encoding");
             
             span.innerHTML=txt;
         }
