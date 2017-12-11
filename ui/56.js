@@ -12,7 +12,7 @@ button.onclick=function (){
             var xmlDoc= request.responseXML;
             var span=document.getElementById("demo");
             x=xmlDoc.childNodes;
-            console.log(x);
+            console.log(x,"--->ChildNodes");
              x=xmlDoc.doctype;
             console.log(x);
              x=xmlDoc.documentElement;
