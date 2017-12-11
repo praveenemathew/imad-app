@@ -23,6 +23,8 @@ button.onclick=function (){
             console.log(x,"------>Dom Config");
              x=xmlDoc.implementation;
             console.log(x,"----->Implementation");
+             x=xmlDoc.firstChild;
+            console.log(x,"---->FirstChild");
             
             span.innerHTML=txt;
         }
