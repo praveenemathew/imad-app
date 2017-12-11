@@ -14,15 +14,15 @@ button.onclick=function (){
             x=xmlDoc.childNodes;
             console.log(x,"--->ChildNodes");
              x=xmlDoc.doctype;
-            console.log(x);
+            console.log(x,"--->Document Type");
              x=xmlDoc.documentElement;
-            console.log(x);
+            console.log(x,"---->Document Element");
              x=xmlDoc.documentURL;
-            console.log(x);
+            console.log(x,"------>Document URL");
              x=xmlDoc.domConfig;
-            console.log(x);
+            console.log(x,"------>Dom Config");
              x=xmlDoc.implementation;
-            console.log(x);
+            console.log(x,"----->Implementation");
             
             span.innerHTML=txt;
         }
