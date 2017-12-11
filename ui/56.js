@@ -13,6 +13,16 @@ button.onclick=function (){
             var span=document.getElementById("demo");
             x=xmlDoc.childNodes;
             console.log(x);
+             x=xmlDoc.doctype;
+            console.log(x);
+             x=xmlDoc.documentElement;
+            console.log(x);
+             x=xmlDoc.documentURL;
+            console.log(x);
+             x=xmlDoc.domConfig;
+            console.log(x);
+             x=xmlDoc.implementation;
+            console.log(x);
             
             span.innerHTML=txt;
         }
