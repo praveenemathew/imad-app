@@ -10,6 +10,20 @@ button.onclick=function (){
     if(request.readyState === XMLHttpRequest.DONE){
         if(request.status===200){
             var xmlDoc= request.responseXML;
+            
+            x = xmlDoc.getElementsByTagName("book")[0];
+            xlen = x.childNodes.length;
+            y = x.firstChild;
+            txt = "";
+            for (i = 0; i < xlen; i++) {
+                 if (y.nodeType == 1) {
+                     txt += i + " " + y.nodeName + "<br>";
+                         }
+                  y = y.nextSibling;
+              }
+            
+            
+            
             var span=document.getElementById("demo");
             x=xmlDoc.childNodes;
             console.log(x,"--->ChildNodes");
