@@ -21,7 +21,8 @@ button.onclick=function (){
                          }
                   y = y.nextSibling;
               }
-            
+             document.getElementById("demo").innerHTML = txt; 
+
             
             
             var span=document.getElementById("demo");
